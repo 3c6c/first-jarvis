@@ -1,3 +1,4 @@
+# Importing Modules
 import pyttsx3 
 import speech_recognition as sr 
 import datetime
@@ -6,6 +7,7 @@ import webbrowser
 import os
 import smtplib
 
+# Important functions
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices[1].id)
@@ -58,6 +60,7 @@ def sendEmail(to, content):
     server.sendmail('youremail@gmail.com', to, content)
     server.close()
 
+# Initialising the code using constructor
 if __name__ == "__main__":
     wishMe()
     while True:
